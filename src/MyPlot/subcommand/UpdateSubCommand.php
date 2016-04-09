@@ -24,3 +24,4 @@ class UpdateSubCommand extends SubCommand
 					$this->getLogger()->info(TextFormat::GREEN."Your version of MyPlot is up-to-date! No update is required.");
 				}
 			}
+}
