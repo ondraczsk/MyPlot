@@ -2,7 +2,7 @@ name: MyPlot
 main: MyPlot\MyPlot
 version: 1.0
 load: STARTUP
-api: 1.0.0
+api: [1.0.0, 1.1.0]
 author: Wies and Exxarion
 description: Plot and protection plugin
 softdepend: [EconomyAPI, PocketMoney]
@@ -60,6 +60,9 @@ permissions:
       myplot.command.warp:
         description: Gives the warp command
         default: true
+      myplot.command.update:
+        description: Gives the update command
+        default: op
   myplot.admin:
     description: Grant administrator powers
     default: op
