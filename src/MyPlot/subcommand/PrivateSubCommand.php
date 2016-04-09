@@ -23,7 +23,7 @@ class PrivateSubCommand extends SubCommand
             $sender->sendMessage(TextFormat::RED . $this->translateString("notowner"));
             return true;
         }
-        if (!$plot->isPrivate($plot)) {
+        if ($plot->isPrivate($plot)) {
             $sender->sendMessage($this->translateString("private.already"));
             return true;
         }
