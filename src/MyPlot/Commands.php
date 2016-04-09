@@ -21,6 +21,7 @@ use MyPlot\subcommand\BiomeSubCommand;
 use MyPlot\subcommand\NameSubCommand;
 use MyPlot\subcommand\GiveSubCommand;
 use MyPlot\subcommand\WarpSubCommand;
+use MyPlot\subcommand\UpdateSubCommand;
 
 class Commands extends PluginCommand
 {
@@ -52,6 +53,7 @@ class Commands extends PluginCommand
         $this->loadSubCommand(new NameSubCommand($plugin, "name"));
         $this->loadSubCommand(new GiveSubCommand($plugin, "give"));
         $this->loadSubCommand(new WarpSubCommand($plugin, "warp"));
+        $this->loadSubCommand(new UpdateSubCommand($plugin, "update"));
     }
 
     /**
