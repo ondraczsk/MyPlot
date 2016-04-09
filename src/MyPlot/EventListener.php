@@ -162,7 +162,6 @@ class EventListener implements Listener
             $event->getPlayer->sendMessage(TextFormat::RED."You are not allowed to enter $owner's plot");
             }
         }
-        }
         if (!$this->plugin->getConfig()->get("ShowPlotPopup", true))
             return;
 
