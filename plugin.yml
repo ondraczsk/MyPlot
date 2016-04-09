@@ -63,6 +63,18 @@ permissions:
       myplot.command.update:
         description: Gives the update command
         default: op
+      myplot.command.open:
+        description: Gives the open command
+        default: true
+      myplot.command.close:
+        description: Gives the close command
+        default: true
+      myplot.command.private:
+        description: Gives the private command
+        default: private
+      myplot.command.public:
+        description: Gives the public command
+        default: true
   myplot.admin:
     description: Grant administrator powers
     default: op
@@ -97,6 +109,18 @@ permissions:
         default: op
       myplot.admin.warp:
         description: Allow player to warp to unclaimed plots
+        default: op
+      myplot.admin.open:
+        description: Allow player open up other player's plots to the public
+        default: op
+      myplot.admin.close:
+        description: Allow player to close opened plots
+        default: op
+      myplot.admin.private:
+        description: Allow player to mark other player's plots as private
+        default: op
+      myplot.admin.public:
+        description: Allow player to mark other player's plots as public
         default: op
   myplot.claimplots:
     description: Allows players to claim X plots
