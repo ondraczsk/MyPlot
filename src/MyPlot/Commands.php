@@ -22,6 +22,10 @@ use MyPlot\subcommand\NameSubCommand;
 use MyPlot\subcommand\GiveSubCommand;
 use MyPlot\subcommand\WarpSubCommand;
 use MyPlot\subcommand\UpdateSubCommand;
+use MyPlot\subcommand\OpenSubCommand;
+use MyPlot\subcommand\CloseSubCommand;
+use MyPlot\subcommand\PrivateSubCommand;
+use MyPlot\subcommand\PublicSubCommand;
 
 class Commands extends PluginCommand
 {
@@ -54,6 +58,10 @@ class Commands extends PluginCommand
         $this->loadSubCommand(new GiveSubCommand($plugin, "give"));
         $this->loadSubCommand(new WarpSubCommand($plugin, "warp"));
         $this->loadSubCommand(new UpdateSubCommand($plugin, "update"));
+        $this->loadSubCommand(new OpenSubCommand($plugin, "open"));
+        $this->loadSubCommand(new CloseSubCommand($plugin, "close"));
+        $this->loadSubCommand(new PrivateSubCommand($plugin, "private"));
+        $this->loadSubCommand(new PublicSubCommand($plugin, "public"));
     }
 
     /**
