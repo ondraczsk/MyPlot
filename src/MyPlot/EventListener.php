@@ -159,7 +159,7 @@ class EventListener implements Listener
         if ($plot->isPrivate($plot) == "True") {
             if(!$plot->owner == $username or !$plot->isHelper($username) or !$event->getPlayer()->hasPermission("myplot.admin.enter")) {
             $event->setCancelled(true);
-            $event->getPlayer->sendMessage(TextFormat::RED."You are not allowed to enter $owner's plot")
+            $event->getPlayer->sendMessage(TextFormat::RED."You are not allowed to enter $owner's plot");
             }
         }
         }
