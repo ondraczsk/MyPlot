@@ -3,7 +3,7 @@ namespace MyPlot;
 
 class Plot
 {
-    public $levelName, $X, $Z, $name, $owner, $helpers, $biome, $id;
+    public $levelName, $X, $Z, $name, $owner, $helpers, $biome, $id, $plotPrivate, $open;
 
     /**
      * @param string $levelName
@@ -14,8 +14,10 @@ class Plot
      * @param array $helpers
      * @param string $biome
      * @param int $id
+     * @param bool $plotPrivate
+     * @param bool $open
      */
-    public function __construct($levelName, $X, $Z, $name = "", $owner = "", $helpers = [], $biome = "PLAINS", $id = -1) {
+    public function __construct($levelName, $X, $Z, $name = "", $owner = "", $helpers = [], $biome = "PLAINS", $id = -1, $plotPrivate = "False", $open = "False") {
         $this->levelName = $levelName;
         $this->X = $X;
         $this->Z = $Z;
@@ -24,6 +26,8 @@ class Plot
         $this->helpers = $helpers;
         $this->biome = $biome;
         $this->id = $id;
+        $this->plotPrivate = $plotPrivate;
+        $this->open = $open;
     }
 
     /**
@@ -61,5 +65,26 @@ class Plot
 
     public function __toString() {
         return "(" . $this->X . ";" . $this->Z . ")";
+    }
+    /**
+     * @param bool $plotPrivate
+     * @return bool
+     */
+    public function isPrivate($plot) {
+        if ($this->plotPrivate(($plot) == "True") {
+            return true;
+        }
+        return false;
+    }
+    
+    /**
+     * @param bool $open
+     * @return bool
+     */
+    public function isOpen($plot) {
+        if ($this->open(($plot) == "True") {
+            return true;
+        }
+        return false;
     }
 }
