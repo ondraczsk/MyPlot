@@ -116,7 +116,7 @@ class EventListener implements Listener
         $plot = $this->plugin->getPlotByPosition($event->getBlock());
         if ($plot !== null) {
             $username = $event->getPlayer()->getName();
-            if ($plot->owner == $username or $plot->isHelper($username) or $event->getPlayer()->hasPermission("myplot.admin.build.plot") or /*$plot->isOpen($plot) == "True"*/) {
+            if ($plot->owner == $username or $plot->isHelper($username) or $event->getPlayer()->hasPermission("myplot.admin.build.plot") /*or $plot->isOpen($plot) == "True"*/) {
                 if (!($event instanceof PlayerInteractEvent and $event->getBlock() instanceof Sapling))
                     return;
 
