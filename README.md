@@ -17,16 +17,24 @@ A list of commands and permissions can be found in the [wiki](https://github.com
 Want to try MyPlot before you install it on your server? Check it out these awesome servers that use this plugin:
 <br>
 
+<br>
+A+Craft MCPE (Official MyPlot Server)<br>
+play.aplus-craft.tk<br>
+25578<br>
+http://aplus-craft.tk<br>
+<br>
+
 MinePocket<br>
 creative.minepocket.com:19132<br>
 http://minepocket.com<br>
+<br>
 
 DiamondRealms PlotBuild<br>
 us.diamondrealms.tk:19132<br>
 <!-- Does not seem to be loading
 [https://www.drpe.tk/](https://www.drpe.tk/)<br> 
 -->
-
+<br>
 
 
 </br>
