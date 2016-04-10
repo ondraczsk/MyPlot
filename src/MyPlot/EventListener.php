@@ -116,7 +116,7 @@ class EventListener implements Listener
         $plot = $this->plugin->getPlotByPosition($event->getBlock());
         if ($plot !== null) {
             $username = $event->getPlayer()->getName();
-            if ($plot->owner == $username or $plot->isHelper($username) or $event->getPlayer()->hasPermission("myplot.admin.build.plot") or $plot->isOpen($plot) == "True") {
+            if ($plot->owner == $username or $plot->isHelper($username) or $event->getPlayer()->hasPermission("myplot.admin.build.plot") or /*$plot->isOpen($plot) == "True"*/) {
                 if (!($event instanceof PlayerInteractEvent and $event->getBlock() instanceof Sapling))
                     return;
 
@@ -156,12 +156,13 @@ class EventListener implements Listener
     }
 
     public function onPlayerMove(PlayerMoveEvent $event) {
-        if ($plot->isPrivate($plot) == "True") {
+        //Removed for testing
+        /*if ($plot->isPrivate($plot) == "True") {
             if(!$plot->owner == $username or !$plot->isHelper($username) or !$event->getPlayer()->hasPermission("myplot.admin.enter")) {
             $event->setCancelled(true);
             $event->getPlayer->sendMessage(TextFormat::RED."You are not allowed to enter $owner's plot");
             }
-        }
+        }*/
         if (!$this->plugin->getConfig()->get("ShowPlotPopup", true))
             return;
 
