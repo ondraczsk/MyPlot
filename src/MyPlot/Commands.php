@@ -58,10 +58,11 @@ class Commands extends PluginCommand
         $this->loadSubCommand(new GiveSubCommand($plugin, "give"));
         $this->loadSubCommand(new WarpSubCommand($plugin, "warp"));
         $this->loadSubCommand(new UpdateSubCommand($plugin, "update"));
-        $this->loadSubCommand(new OpenSubCommand($plugin, "open"));
+        //Removed for testing
+        /*$this->loadSubCommand(new OpenSubCommand($plugin, "open"));
         $this->loadSubCommand(new CloseSubCommand($plugin, "close"));
         $this->loadSubCommand(new PrivateSubCommand($plugin, "private"));
-        $this->loadSubCommand(new PublicSubCommand($plugin, "public"));
+        $this->loadSubCommand(new PublicSubCommand($plugin, "public"));*/
     }
 
     /**
