@@ -66,10 +66,11 @@ class Plot
     public function __toString() {
         return "(" . $this->X . ";" . $this->Z . ")";
     }
+    //REMOVED FOR TESTING
     /**
      * @param bool $plotPrivate
      * @return bool
-     */
+     *
     public function isPrivate($plot) {
         if ($this->plotPrivate(($plot) == "True") {
             return true;
@@ -80,11 +81,11 @@ class Plot
     /**
      * @param bool $open
      * @return bool
-     */
+     *
     public function isOpen($plot) {
         if ($this->open(($plot) == "True") {
             return true;
         }
         return false;
-    }
+    }*/
 }
