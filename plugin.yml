@@ -95,6 +95,9 @@ permissions:
       myplot.admin.warp:
         description: Allow player to warp to unclaimed plots
         default: op
+      myplot.admin.biome:
+        description: Allow player to use the biome command on all plots
+        default: op
   myplot.claimplots:
     description: Allows players to claim X plots
     default: false
