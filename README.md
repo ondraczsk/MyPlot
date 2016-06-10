@@ -17,9 +17,9 @@ A list of commands and permissions can be found in the [wiki](https://github.com
 Want to try MyPlot before you install it on your server? Check it out these awesome servers that use this plugin:
 <br>
 
-MinePocket<br>
-creative.minepocket.com:19132<br>
-http://minepocket.com<br>
+PocketMiners.com<br>
+hub.pocketminers.com:19132<br>
+http://pocketminers.com<br>
 
 DiamondRealms PlotBuild<br>
 us.diamondrealms.tk:19132<br>
